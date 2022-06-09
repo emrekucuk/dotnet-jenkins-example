@@ -12,11 +12,11 @@ pipeline {
             }
         }
 
-       	stage('Clear Produced Dangling Containers/Layers') {
-            steps {
-				sh("docker images | grep '<none>' | awk '{print \$3}' | xargs -I {} docker rmi -f {} || true")
-				sh("docker images | grep 'registry.toprak.tkholding.com' | awk '{print \$3}' | xargs -I {} docker rmi -f {} || true")
-            }
-        }
+       	// stage('Clear Produced Dangling Containers/Layers') {
+        //     steps {
+				// sh("docker images | grep '<none>' | awk '{print \$3}' | xargs -I {} docker rmi -f {} || true")
+				// sh("docker images | grep 'registry.toprak.tkholding.com' | awk '{print \$3}' | xargs -I {} docker rmi -f {} || true")
+        //     }
+        // }
     }
 }
