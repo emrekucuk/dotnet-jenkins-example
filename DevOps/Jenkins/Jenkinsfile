@@ -6,7 +6,7 @@ pipeline {
             stages {
                 stage('JenkinsExample - Build Image and Deploy') {
                     steps {
-                        sh("docker build -t dotnet-jenkins-example:latest -f Devops/Docker/Dockerfile .")
+                        sh("docker build -t dotnet-jenkins-example:latest -f DevOps/Docker/Dockerfile .")
                     }
                 }
             }
