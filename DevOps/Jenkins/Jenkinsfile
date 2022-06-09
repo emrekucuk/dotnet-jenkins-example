@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('UI_Gateway') {
+            stages {
+                stage('UI_Gateway - Build/Push Image and Deploy') {
+                    steps {
+                        sh("docker build -t dotnet-jenkins-example:latest -f Devops/Docker/Dockerfile .")
+                    }
+                }
+            }
+        }
+
+       	stage('Clear Produced Dangling Containers/Layers') {
+            steps {
+				sh("docker images | grep '<none>' | awk '{print \$3}' | xargs -I {} docker rmi -f {} || true")
+				sh("docker images | grep 'registry.toprak.tkholding.com' | awk '{print \$3}' | xargs -I {} docker rmi -f {} || true")
+            }
+        }
+    }
+}

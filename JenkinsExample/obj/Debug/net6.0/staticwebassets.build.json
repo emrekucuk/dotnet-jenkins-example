@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "mLxVrf87lU1h1MH1gf3qIv63Izj7qCLQkwGmcHQmzYE=",
+  "Source": "JenkinsExample",
+  "BasePath": "_content/JenkinsExample",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
