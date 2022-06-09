@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('UI_Gateway') {
+        stage('JenkinsExample') {
             stages {
-                stage('UI_Gateway - Build/Push Image and Deploy') {
+                stage('JenkinsExample - Build Image and Deploy') {
                     steps {
                         sh("docker build -t dotnet-jenkins-example:latest -f Devops/Docker/Dockerfile .")
                     }
