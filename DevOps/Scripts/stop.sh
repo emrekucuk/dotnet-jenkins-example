@@ -1,0 +1,1 @@
+docker stop dotnet-jenkins-example && docker rm dotnet-jenkins-example

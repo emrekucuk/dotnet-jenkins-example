@@ -1,0 +1,1 @@
+docker run -d --name dotnet-jenkins-example -p 5000:80  dotnet-jenkins-example

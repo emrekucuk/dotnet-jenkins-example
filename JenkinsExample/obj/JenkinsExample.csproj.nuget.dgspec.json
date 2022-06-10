@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\emrek\\Documents\\workspace\\dotnet-jenkins-example\\JenkinsExample\\JenkinsExample.csproj": {}
+    "/home/emre/workspace/dotnet-jenkins-example/JenkinsExample/JenkinsExample.csproj": {}
   },
   "projects": {
-    "C:\\Users\\emrek\\Documents\\workspace\\dotnet-jenkins-example\\JenkinsExample\\JenkinsExample.csproj": {
+    "/home/emre/workspace/dotnet-jenkins-example/JenkinsExample/JenkinsExample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\emrek\\Documents\\workspace\\dotnet-jenkins-example\\JenkinsExample\\JenkinsExample.csproj",
+        "projectUniqueName": "/home/emre/workspace/dotnet-jenkins-example/JenkinsExample/JenkinsExample.csproj",
         "projectName": "JenkinsExample",
-        "projectPath": "C:\\Users\\emrek\\Documents\\workspace\\dotnet-jenkins-example\\JenkinsExample\\JenkinsExample.csproj",
-        "packagesPath": "C:\\Users\\emrek\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\emrek\\Documents\\workspace\\dotnet-jenkins-example\\JenkinsExample\\obj\\",
+        "projectPath": "/home/emre/workspace/dotnet-jenkins-example/JenkinsExample/JenkinsExample.csproj",
+        "packagesPath": "/home/emre/.nuget/packages/",
+        "outputPath": "/home/emre/workspace/dotnet-jenkins-example/JenkinsExample/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\emrek\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/emre/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -67,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
         }
       }
     }

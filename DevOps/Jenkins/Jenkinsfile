@@ -4,9 +4,15 @@ pipeline {
     stages {
         stage('JenkinsExample') {
             stages {
-                stage('JenkinsExample - Build Image and Deploy') {
+                stage('JenkinsExample - CI') {
                     steps {
                         sh("docker build -t dotnet-jenkins-example:latest -f DevOps/Docker/Dockerfile .")
+                    }
+                }
+                 stage('JenkinsExample - CD') {
+                    steps {
+                        sh("./DevOps/Scripts/stop.sh || true ")
+                        sh("./DevOps/Scripts/start.sh ")
                     }
                 }
             }
