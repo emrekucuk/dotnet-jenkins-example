@@ -6,7 +6,8 @@ pipeline {
             stages {
                 stage('JenkinsExample - CI') {
                     steps {
-                        sh("docker build -t dotnet-jenkins-example:latest -f DevOps/Docker/Dockerfile .")
+                        sh("docker build -t dotnet-jenkins-example:${env.BUILD_ID} -f DevOps/Docker/Dockerfile .")
+                        sh("docker push registry.emrekucuk.com.tr/dotnet-jenkins-example:${env.BUILD_ID}")
                     }
                 }
                  stage('JenkinsExample - CD') {
