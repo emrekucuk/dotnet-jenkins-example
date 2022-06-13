@@ -18,7 +18,7 @@ pipeline {
                 }
                 stage('Send Notification Mail') {
                     steps {
-                        mail(body: "Backend: '${MODULE}' production module(s) successfully builded, published and deployed to kubernetes.", 
+                        mail(body: "Backend: production module(s) successfully builded, published and deployed to kubernetes.", 
                         from: 'emre.kucuk@crosstech.com.tr', subject: 'Jenkins: Dotnet Jenkins Example Backend Project Pipeline Completed', to: 'emrekucuk74@hotmail.com')
                     }
                 }
