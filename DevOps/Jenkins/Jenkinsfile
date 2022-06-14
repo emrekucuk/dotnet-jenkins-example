@@ -19,7 +19,8 @@ pipeline {
                 stage('Send Notification Mail') {
                     steps {
                         mail(body: "Test Amaçlıdır", 
-                        from: 'emre.kucuk@crosstech.com.tr', subject: 'Test Amaçlıdır.', to: '43f819bf.crosstech.com.tr@emea.teams.ms')
+                        from: 'emre.kucuk@crosstech.com.tr', subject: 'Test Amaçlıdır.', to: 'emrekucuk74@hotmail.com')
+                        // from: 'emre.kucuk@crosstech.com.tr', subject: 'Test Amaçlıdır.', to: '43f819bf.crosstech.com.tr@emea.teams.ms')
                     }
                 }
             }
